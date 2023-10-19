@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 5px;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+#logo img{
+    height: 45px;
+    filter: invert(1);
+}
+
+#navbar {
+    padding: 13px 14px;
+    position: sticky;
+    top: 0;
+}
+
+@media (max-width: 950px) {
+    /* For screens up to 768px wide (typical tablet size) */
+
+    #navbar ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    #navbar li {
+        margin: 10px 0; /* Add spacing between navigation items */
+    }
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 3px 20px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+#navbar li a:hover {
+    color: rgb(19, 13, 13);
+    font-weight: bold;
+}
+
+
+#introSection {
+    height: 450px;
+    background-color: red;
+    background: url("/static/bg.avif") no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    padding-bottom: 160px;
+}
+
+#introSection div.small {
+    font-size: 1.8rem;
+}
+
+#missionSection {
+    height: 300px;
+    margin: auto;
+    width: 100%;
+    margin-left: 0px;
+    background-color: #fff1dd;
+    display: block;
+    padding-left: 30px;
+    white-space: nowrap;
+    overflow-x: auto;
+    
+}
+
+#missionSection h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 12px;
+}
+
+@media (max-width: 1360px) {
+    #missionSection {
+        padding-left: 10px; /* Adjust padding for smaller screens */
+        overflow: hidden;
+        white-space: normal;
+        height: 82%;
+    }
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 200px;
+    width: 40%;
+    margin: 12px 15px;
+    display: inline-block;
+    background-color: #fff7ec;
+}
+
+.card h3{
+    text-align: center;
+    margin: 12px;
+    font-size: 1.5rem;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img{
+    padding: 0px 8px;
+}
+
+.card-content{
+    padding: 0 8px;
+}
+
+.card-content p{
+    font-size: 18px;
+    
+}
+
+.card-img img{
+    height: inherit;
+    height: 130px;
+    width: 122px;
+
+}
+
+@media (max-width: 1360px) {
+    .card {
+        width: 48%; /* Cards will occupy 100% width on smaller screens */
+        margin: 12px 0; /* Adjust spacing for smaller screens */
+        flex-direction: column;
+        margin: 6px;
+        
+    }
+}
+
+#sponserSection {
+    height: 300px;
+    background-color: #c9c0c1;;
+}
+
+#sponserSection h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 12px;
+}
+
+#sponser{
+    height: 200px;
+    max-width: 750px;
+    margin: 27px auto;
+}
+
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+
+#footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: black;
+}

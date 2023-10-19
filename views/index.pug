@@ -1,0 +1,69 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Adnan Dance Academy
+        style 
+            include ../static/style.css
+    body
+        nav#navbar
+            ul 
+                div#logo 
+                    img(src="/static/img/logo.jpg", alt="as")
+                    | HDA
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us]
+
+        section#introSection
+            div Welcome to Adnan dance academy 
+            div.small Eat Sleep Dance repeat
+
+
+        section#missionSection
+            h2 Our mission
+            .card 
+                h3 Dance perfection
+                .card-box 
+                    .card-img 
+                        img(src="/static/img/1.avif")
+
+                    .card-content 
+                        p This is the best dance academy of the country
+
+            .card 
+                h3 Dance as you like
+                .card-box 
+                    .card-img 
+                        img(src="/static/img/2.avif")
+
+                    .card-content 
+                        p This is the best dance academy of the country
+
+
+            .card 
+                h3 Expert teaching
+                .card-box 
+                    .card-img 
+                        img(src="/static/img/3.avif")
+
+                    .card-content 
+                        p This is the best dance academy of the country
+
+
+        section#sponserSection
+            h2 Our sponser 
+            #sponser 
+                img(src="/static/img/logo1.avif", alt="Sponser Img" Class="spImage")
+                img(src="/static/img/logo2.avif", alt="Sponser Img" Class="spImage")
+                img(src="/static/img/logo3.avif", alt="Sponser Img" Class="spImage")
+                img(src="/static/img/logo4.avif", alt="Sponser Img" Class="spImage")
+
+        footer#footer 
+            | Copyright © 2023 AdnanDanceAademy.com  | All rights reserved 
+
+        script 
+            include ../static/index.js
